@@ -1,12 +1,12 @@
-package delete_work;
+package com.rag.work_uncategorized;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-import work_uncategorized.Teacher;
 
-public class WithEvict {
+
+public class DeleteWithEvict {
     public static void main(String[] args) {
 
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
@@ -14,15 +14,18 @@ public class WithEvict {
         Transaction transaction = session.beginTransaction();
 
 
-//        work_uncategorized.Teacher teacher = new work_uncategorized.Teacher();
         Teacher teacher = session.get(Teacher.class, 42);
-//        teacher.setId(38);
-        session.delete(teacher);
-        teacher.setName("babar");
-        session.save(teacher);
+        session.evict(teacher);
+        System.out.println("bro rag");
+//        session.save(teacher);
 
+        teacher.setName("ragjn");
+        System.out.println("show rag");
+        session.update(teacher);
         transaction.commit();
         session.close();
+
+
 
     }
 }

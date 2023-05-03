@@ -1,11 +1,11 @@
-package query_works;
+package com.rag.query_works;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
-import work_uncategorized.Teacher;
+import com.rag.work_uncategorized.Teacher;
 
 import java.util.List;
 

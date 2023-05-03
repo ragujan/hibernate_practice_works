@@ -1,11 +1,12 @@
-package work_uncategorized;
+package com.rag.delete_work;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import com.rag.work_uncategorized.Teacher;
 
-public class Delete {
+public class WithEvict {
     public static void main(String[] args) {
 
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
@@ -14,7 +15,7 @@ public class Delete {
 
 
 //        work_uncategorized.Teacher teacher = new work_uncategorized.Teacher();
-        Teacher teacher = session.get(Teacher.class, 40);
+        Teacher teacher = session.get(Teacher.class, 42);
 //        teacher.setId(38);
         session.delete(teacher);
         teacher.setName("babar");
