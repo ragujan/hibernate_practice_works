@@ -14,6 +14,7 @@ public class MergeInsert {
         Teacher teacher1 = new Teacher();
         teacher1.setName("eminem taker");
         session.merge(teacher1);
+
         transaction.commit();
     }
 }

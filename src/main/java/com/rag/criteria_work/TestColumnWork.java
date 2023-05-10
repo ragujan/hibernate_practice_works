@@ -11,6 +11,7 @@ import javax.persistence.criteria.Root;
 import java.util.List;
 
 public class TestColumnWork {
+//    test 7
     public static void main(String[] args) {
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 

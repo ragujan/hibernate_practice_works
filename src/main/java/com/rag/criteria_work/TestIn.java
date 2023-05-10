@@ -25,9 +25,7 @@ public class TestIn {
 //        inCluase.value(10);
 //        inCluase.value(11);
         query.select(root).where(root.get("id").in(9,10,11));
-
 //        query.select(root).where(inCluase);
-
         List<Teacher> teachers = session.createQuery(query).getResultList();
 
         teachers.forEach(e -> System.out.println(e.getAge()));

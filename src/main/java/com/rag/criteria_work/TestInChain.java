@@ -13,7 +13,7 @@ import java.util.List;
 public class TestInChain {
     public static void main(String[] args) {
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
-
+//test 6
         Session session = sessionFactory.openSession();
 
         CriteriaBuilder cb = session.getCriteriaBuilder();
@@ -21,11 +21,7 @@ public class TestInChain {
         Root<Teacher> root = query.from(Teacher.class);
 
 
-        query.select(root)
-                .where(cb.between(root.get("id"),1,10))
-                .where(cb.equal(root.get("name"),"rag3"));
-
-
+        query.select(root).where(cb.between(root.get("id"), 1, 10)).where(cb.equal(root.get("name"), "rag3"));
 
 
         List<Teacher> teachers = session.createQuery(query).getResultList();
