@@ -8,7 +8,7 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="hibernate.show_sql">true</property>
         <property name="current_session_context_class">thread</property>
-        <mapping class="com.rag.work_uncategorized.Employee"/>
-        <mapping class="com.rag.work_uncategorized.Teacher"/>
+        <mapping class="com.rag.entity.Employee"/>
+        <mapping class="com.rag.entity.Teacher"/>
     </session-factory>
 </hibernate-configuration>

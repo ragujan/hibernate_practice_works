@@ -1,4 +1,4 @@
-package com.rag.work_uncategorized;
+package com.rag.entity;
 
 import javax.persistence.*;
 

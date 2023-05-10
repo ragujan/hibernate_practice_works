@@ -1,5 +1,7 @@
 package com.rag.work_uncategorized;
 
+import com.rag.entity.Employee;
+import com.rag.entity.Teacher;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;

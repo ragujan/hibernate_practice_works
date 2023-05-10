@@ -1,6 +1,6 @@
 package com.rag.pagination_work;
 
-import com.rag.work_uncategorized.Teacher;
+import com.rag.entity.Teacher;
 import org.hibernate.ScrollableResults;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

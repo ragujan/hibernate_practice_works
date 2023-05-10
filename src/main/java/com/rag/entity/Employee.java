@@ -1,9 +1,9 @@
-package com.rag.work_uncategorized;
+package com.rag.entity;
 
 import javax.persistence.*;
 
 @Entity
-class Employee {
+public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
